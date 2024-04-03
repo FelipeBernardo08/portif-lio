@@ -1,0 +1,424 @@
+body,
+html {
+    height: 100%;
+    background:
+        -moz-linear-gradient(purple, orange, red);
+    background:
+        -webkit-linear-gradient(purple, orange, red);
+    background:
+        linear-gradient(purple, orange, red);
+    background-attachment: fixed;
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#hover {
+    height: 100%;
+    animation: animation1;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#late {
+    animation: animation2;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes animation4 {
+    from {}
+
+    to {
+        padding: 2px;
+    }
+}
+
+@keyframes animation3 {
+    50% {
+        left: 0px;
+        top: 0px;
+    }
+
+    100% {
+        left: 700px;
+        top: 0px;
+    }
+}
+
+@keyframes animation2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes animation1 {
+    from {
+        opacity: 1;
+        box-shadow: 2px #7a00ff;
+    }
+
+    to {
+        height: 0px;
+        opacity: 0;
+        /*transform:rotate(40deg);*/
+    }
+}
+
+@keyframes animation {
+    to {}
+
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+/*----------------------------inicio nav--------------------*/
+
+#menu1 {
+    color: purple;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+#name {
+    margin-left: 5px;
+}
+
+#menu12 {
+    animation: animation;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+li {
+    text-align: center;
+}
+
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/*------------------------fim nav-----------------------*/
+
+/*-------------------inicio content---------------------*/
+.box {
+    height: 100%;
+    padding: 100px 5px;
+    text-align: justify center;
+}
+
+#hello {
+    color: white;
+    text-align: justify center;
+}
+
+#me img {
+    width: 60%;
+    border-radius: 400px;
+    border: 3px solid white;
+    background:
+        linear-gradient(60deg, rgba(228, 216, 216, 0.217), rgba(236, 104, 218, 0.291));
+}
+
+#about {
+    height: 100%;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 40px;
+}
+
+#icons {
+    animation: animation4;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+#projects {
+    text-align: center;
+}
+
+#text {
+    width: 80%;
+    padding-top: 10px;
+    border-radius: 0 0 50px 50px;
+    background: rgba(215, 202, 202, 0.701);
+    color: white;
+    margin-bottom: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+}
+
+#card {
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.nav-item {
+    display: inline;
+}
+
+#contact {
+    color: purple;
+    background: rgba(215, 202, 202, 0.701);
+}
+
+.icon {
+    color: rgb(211, 207, 207);
+    font-size: 50px;
+    margin: 10px;
+}
+
+.icon:hover {
+    color: rgb(152, 59, 152);
+    transition: all 0.5s;
+    font-size: 52px;
+}
+
+#certificado {
+    height: 450px;
+}
+
+
+[data-anime] {
+    opacity: 0;
+    transition: 2s;
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+
+#sublinhado {
+    color: purple;
+    text-transform: uppercase;
+    background-image: linear-gradient(80deg, orange, red);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    background-position: bottom center;
+    transition: background-size 500ms ease;
+    text-decoration: none;
+}
+
+#sublinhado:hover {
+    background-size: 90px 3px;
+}
+
+
+/*-------Media-------*/
+
+@media (min-width: 280px) and (max-width:374px) {
+    #imgHover {
+        margin-top: 200px;
+    }
+
+    #about {
+        height: auto;
+    }
+
+    #hello {
+        margin-top: -60px;
+    }
+
+    #me img {
+        margin-top: 10%;
+
+    }
+
+    #certificado {
+        height: 300px;
+    }
+}
+
+@media (min-width: 375px) and (max-width:376px) {
+    #imgHover {
+        margin-top: 200px;
+    }
+
+    #hello {
+        margin-top: -60px;
+    }
+
+    #me img {
+        width: 70%;
+        margin-top: 6%;
+
+    }
+
+    #certificado {
+        height: 300px;
+    }
+}
+
+@media (min-width:377px) and (max-width:389px) {
+    #imgHover {
+        margin-top: 200px;
+    }
+
+    #hello {
+        margin-top: -20%;
+    }
+
+    #me img {
+        margin-top: 5%
+    }
+
+    #certificado {
+        height: 300px;
+    }
+}
+
+@media (min-width: 390px) and (max-width:400px) {
+    #imgHover {
+        margin-top: 210px;
+    }
+
+    #hello {
+        margin-top: -50px;
+    }
+
+    #me img {
+        width: 70%;
+        margin-top: 10%;
+    }
+
+    #certificado {
+        height: 350px;
+    }
+}
+
+@media (min-width:410px) and (max-width: 501px) {
+    #imgHover {
+        margin-top: 200px;
+    }
+
+    #hello {
+        margin-top: -10%;
+    }
+
+    #me img {
+        margin-top: 10%;
+        width: 70%;
+    }
+
+    #certificado {
+        height: 350px;
+    }
+}
+
+@media (min-width:502px) and (max-width: 742px) {
+    #about {
+        height: auto;
+    }
+
+    #hello {
+        width: 60%;
+        margin-top: -18%;
+    }
+
+    #me img {
+        margin-top: -50%;
+        margin-left: 60%;
+        width: 30%;
+    }
+
+    #certificado {
+        height: 380px;
+    }
+}
+
+@media (min-width: 745px) and (max-width: 915px) {
+    #about {
+        height: auto;
+    }
+
+    #hello {
+        margin-top: -10%;
+    }
+
+    #me img {
+        margin-top: -20%;
+    }
+
+    #certificado {
+        height: 350px;
+    }
+}
+
+/*------------Desktop-------------*/
+@media (min-width: 1200px) and (max-width: 2000px) {
+    #certificates {
+        margin-top: 5%;
+    }
+
+    #imgHover {
+        margin-top: 10%;
+        width: 40%;
+    }
+
+    #hello {
+        margin-top: 5%;
+    }
+
+    #hello h1 {
+        font-size: 80px;
+    }
+
+    #hello h3 {
+        font-size: 50px;
+    }
+
+    #hello p {
+        font-size: 20px;
+    }
+
+    #me img {
+        margin-top: 5%;
+
+    }
+
+    .btn {
+        width: 120px;
+    }
+}
