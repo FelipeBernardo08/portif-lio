@@ -37,30 +37,7 @@
                     </div>
 
                     <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a id="sublinhado" href="#home" class="nav-link glow-on-hover">
-                                    Início
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a id="sublinhado" href="#about" class="nav-link glow-on-hover">
-                                    Sobre
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a id="sublinhado" href="#projects" class="nav-link glow-on-hover">
-                                    Projetos
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a id="sublinhado" href="#contact" class="nav-link glow-on-hover">
-                                    Contato
-                                </a>
-                            </li>
+                        <ul id="listaLi" class="navbar-nav ml-auto">
                         </ul>
                     </div>
                 </nav>
@@ -89,72 +66,8 @@
         <section id="about" class="container-fluid bg-white pb-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 pt-4 pb-4" data-anime="top">
-                        <h2>Sobre Mim</h2>
-                        <p>
-                            Estudante do curso Análise e Desenvolvimento de Sistemas pela Universidade Paulista
-                            UNIP.<br>
-                            Com foco em desenvolvimento, possuo conhecimentos sólidos como front e back-end.
-                            <br>
-                            Procuro aprender diariamente novas tecnicas para oferecer um design inovador para minhas
-                            aplicações e sites.<br>
-                            Códigos limpos e simples de interpretar, repeitando boas práticas e garantindo
-                            qualidade.<br>
-                            Minhas linguagens (HTML5, CSS3, PHP, JavaScript, MySQL, C) Bibliotecas (jQuery, Bootstrap)
-                            Frameworks(Ionic, Angular).<br><br>
-                            Clique nas imagens a baixo e saiba mais sobre cada linguagem:
-                        </p>
-                        <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover"
-                            data-bs-placement="top"
-                            data-bs-content="HTML - Hypertext Markup Language, uma linguagem que compõe a maioria das páginas da web e aplicativos online.">
-                            <img id="icons" src="img/html.png" height="50px">
-                        </button>
-                        <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover"
-                            data-bs-placement="top"
-                            data-bs-content="CSS - Cascading Style Sheets é uma linguagem de folha de estilo usada para descrever a apresentação de um documento escrito em HTML ou XML (incluindo dialetos XML como SVG, MathML ou XHTML).">
-                            <img id="icons" src="img/css.png" height="50px">
-                        </button>
-                        <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover"
-                            data-bs-placement="top"
-                            data-bs-content="JS ou JavaScript é uma linguagem de programação leve, interpretada ou compilada just-in-time com funções de primeira classe.">
-                            <img id="icons" src="img/js.jpg" height="50px">
-                        </button>
-                        <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover"
-                            data-bs-placement="top"
-                            data-bs-content="PHP é uma linguagem de script do tipo server-side com diversos propósitos. Porém, ela é principalmente utilizada para gerar conteúdos dinâmicos num site.">
-                            <img id="icons" src="img/php.png" height="50px">
-                        </button>
-                        <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover"
-                            data-bs-placement="top"
-                            data-bs-content="MySQL é um sistema de gerenciamento de banco de dados (SGBD) relacional, ou seja, que utiliza a linguagem SQL como interface.">
-                            <img id="icons" src="img/mysql.png" height="50px">
-                        </button>
-                        <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover"
-                            data-bs-placement="top"
-                            data-bs-content="C é uma linguagem de nível intermediária, combina elementos de linguagem de alto nível com funcionalismo de linguagem de máquina.">
-                            <img id="icons" src="img/c1.png" height="50px">
-                        </button>
-                        <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover"
-                            data-bs-placement="top"
-                            data-bs-content="Bootstrap é uma biblioteca, ferramenta front-end muito poderosa, extensível e repleto de recursos. Sistema e componentes de grade pré-construídos.">
-                            <img id="icons" src="img/bootstrap.png" height="50px">
-                        </button>
-                        <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover"
-                            data-bs-placement="top"
-                            data-bs-content="JQuery uma biblioteca JavaScript de código aberto criada em 1996 por John Resig. Sua principal função é simplificar as linhas de códigos, o que possibilita a introdução de efeitos visuais mais complexos na interface do site.">
-                            <img id="icons" src="img/jQuery.png" height="50px">
-                        </button>
-                        <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover"
-                            data-bs-placement="top"
-                            data-bs-content="Ionic é um Framework Open Source gratuito sobre a licença MIT para desenvolvimento de aplicações mobile híbridas. Aplicações híbridas são aplicativos móveis construídos de maneira alternativa a aplicações nativa. São construídos, geralmente, utilizando HTML, CSS e JavaScript.">
-                            <img id="icons" src="img/ionic.png" height="50px">
-                        </button>
-                        <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover"
-                            data-bs-placement="top"
-                            data-bs-content="Angular, um Framework JavaScript de código aberto mantido pela Google para a construção de SPA (sigla para Single Page Applications). Resumidamente, uma SPA é basicamente uma aplicação web construída em uma só página.">
-                            <img id="icons" src="img/angular.png" height="50px">
-                        </button>
-                    </div>
+                    <div class="col-md-12 pt-4 pb-4" data-anime="top" id="aboutMe"></div>
+                    <div id="linguagens" data-anime="top"></div>
                 </div>
                 <hr>
                 <div class="row">
@@ -170,7 +83,8 @@
 
                         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 
-                            <div class="carousel-inner">
+                            <div id="carrosselCertificados" class="carousel-inner">
+
                                 <div id="certificado" class="carousel-item active">
                                     <img src="img/certificadoWeb.jpg" width="100%">
                                 </div>
@@ -215,7 +129,7 @@
                     <h2>Meus Projetos</h2>
                     <p>Algumas de minhas criações</p>
                 </div>
-
+                <div id="prod"></div>
                 <div class="col-lg-4 d-flex justify-content-center" data-anime="top">
                     <div id="card" class="card mt-5" style="width: 98%; height: 80%;">
                         <iframe src="https://bernavet-saude-animal.netlify.app/" scrolling="" frameborder=""></iframe>
