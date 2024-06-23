@@ -134,8 +134,64 @@ function createAboutMe() {
     about.appendChild(text)
 }
 
+
+function createHello() {
+    let principalDiv = document.getElementById('home')
+
+    let row = document.createElement('div')
+    row.classList.add('row')
+
+    let hello = document.createElement('div')
+    hello.id = "hello"
+    hello.classList.add('col-md-6')
+
+    let h1 = document.createElement('h1')
+    h1.textContent = "Olá,"
+
+    let h3 = document.createElement('h3')
+    h3.textContent = "Meu nome é Felipe."
+
+    let p = document.createElement('p')
+    p.innerHTML = `
+        Sou um Web Developer Full Stack.<br>
+                        Atualmente trabalhando com framework Angular com TypeScript e Laravel com PHP.<br>
+    `
+    let a = document.createElement('a')
+    a.classList.add('btn', 'btn-sm', 'btn-light')
+    a.textContent = "CONTATO"
+
+    hello.appendChild(h1)
+    hello.appendChild(h3)
+    hello.appendChild(p)
+    hello.appendChild(a)
+
+    let me = document.createElement('div')
+    me.id = "me"
+    me.classList.add('col-md-6', 'text-center')
+
+    let img = document.createElement('img')
+    img.classList.add('img-fluid')
+    img.src = "img/me.png"
+
+    me.appendChild(img)
+
+    row.appendChild(hello)
+    row.appendChild(me)
+
+    principalDiv.appendChild(row)
+}
+
+function createFooter() {
+    let principalDiv = document.getElementById('contact')
+
+    let container
+}
+
+
+
 createItemsNavBar();
 createAboutMe();
+createHello();
 
 window.addEventListener('scroll', function () {
     animeScroll();
