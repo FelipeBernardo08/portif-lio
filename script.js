@@ -2,6 +2,7 @@ const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
+
 const languages = [
     {
         image: "img/html.png"
@@ -46,21 +47,19 @@ const navMenu = [
         href: "#contact"
     }
 ]
-const projects = [
+
+const linksFooter = [
     {
-        name: 'Bernavet Saúde Animal',
-        text: `Web site feito para uma loja agropecuária.<br>Abra no desktop para ver a responsividade.`,
-        href: "https://bernavet-saude-animal.netlify.app/"
+        href: "https://www.linkedin.com/in/felipe-bernardo-de-oliveira-5b93a3274",
+        icon: "fa-linkedin"
     },
     {
-        name: "Delícias da Cheiloca",
-        text: `Web site para um restaurante, Delícias da Cheiloca <br>Abra no desktop para ver aresponsividade.`,
-        href: "https://deliciasdacheiloca.netlify.app/"
+        href: "https://github.com/FelipeBernardo08",
+        icon: "fa-github"
     },
     {
-        name: "Diego Vidalli Advogado",
-        text: `Website para um advogado.<br>Abra no desktop para ver a responsividade.`,
-        href: "https://diegovidalliadv.netlify.app/"
+        href: "https://wa.me/+5517991020668",
+        icon: "fa-whatsapp"
     }
 ]
 
@@ -101,16 +100,18 @@ function createAboutMe() {
 
     let text = document.createElement('p')
     text.innerHTML = `
-         Estudante do curso Análise e Desenvolvimento de Sistemas pela Universidade Paulista
-                            UNIP.<br>
-                            Com foco em desenvolvimento, possuo conhecimentos sólidos como front e back-end.
-                            <br>
-                            Procuro aprender diariamente novas tecnicas para oferecer um design inovador para minhas
-                            aplicações e sites.<br>
-                            Códigos limpos e simples de interpretar, repeitando boas práticas e garantindo
-                            qualidade.<br>
-                            Minhas linguagens (HTML5, CSS3, PHP, JavaScript, MySQL, C) Bibliotecas (jQuery, Bootstrap)
-                            Frameworks(Ionic, Angular).<br><br>
+        Estudante do ultimo preíodo no curso Análise e Desenvolvimento de Sistemas - Universidade Paulista
+        UNIP.<br>
+        Com foco em desenvolvimento web, possuo conhecimentos sólidos como front e back-end.
+        <br>
+        Procuro aprender diariamente, para manter minhas aplicações atualizadas tecnicamente.<br>
+        Códigos limpos e simples de interpretar, repeitando boas práticas e garantindo qualidade.<br>
+        Stacks com as quais trabalho atualmente:<br>
+        Linguagens (JavaScript, TypeScript e PHP)<br>
+        Frameworks (Angular, Ionic, VueJs, NestJs, Laravel)<br>
+        Bibliotecas (Bootstrap, Tailwind)<br>
+        Banco de dados relacionais (MariaDB, Postgres) <br>
+        Tecnologias (Controle de versionamento GIT, Métodologia ágil SCRUM).<br>
                             
     `;
 
@@ -134,7 +135,6 @@ function createAboutMe() {
     about.appendChild(text)
 }
 
-
 function createHello() {
     let principalDiv = document.getElementById('home')
 
@@ -154,7 +154,10 @@ function createHello() {
     let p = document.createElement('p')
     p.innerHTML = `
         Sou um Web Developer Full Stack.<br>
-                        Atualmente trabalhando com framework Angular com TypeScript e Laravel com PHP.<br>
+        Atualmente trabalhando como desenvolvedor Web na empresa 
+        <a style="text-decoration: none;" href="https://escritha.com/">Escritha</a>.<br>
+        Trabalho também em projetos particulares, como desenvolvimento de landing-pages até apliceções web 
+        complexas.<br> 
     `
     let a = document.createElement('a')
     a.classList.add('btn', 'btn-sm', 'btn-light')
@@ -184,14 +187,48 @@ function createHello() {
 function createFooter() {
     let principalDiv = document.getElementById('contact')
 
-    let container
+    let container = document.createElement('div')
+    container.classList.add('container')
+
+    let row = document.createElement('div')
+    row.classList.add('row')
+
+
+    let col = document.createElement('div')
+    col.classList.add('col-md-12', 'text-center')
+    col.innerHTML = '<hr>'
+
+
+    let h3 = document.createElement('h3')
+    h3.textContent = "Visite minhas páginas ou entre em contato para maiores informações."
+
+    col.appendChild(h3)
+    for (let i = 0; i < linksFooter.length; i++) {
+        let a = document.createElement('a')
+        a.classList.add('icon')
+        a.href = linksFooter[i].href
+
+        let elementI = document.createElement('i')
+        elementI.classList.add('fa-brands', linksFooter[i].icon)
+
+        a.appendChild(elementI)
+        col.appendChild(a)
+    }
+
+    let p = document.createElement('p')
+    p.innerHTML = "© Todos os direitos reservados - 2022"
+
+    col.appendChild(p)
+    row.appendChild(col)
+    container.appendChild(row)
+    principalDiv.appendChild(container)
+
 }
-
-
 
 createItemsNavBar();
 createAboutMe();
 createHello();
+createFooter();
 
 window.addEventListener('scroll', function () {
     animeScroll();
