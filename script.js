@@ -155,7 +155,7 @@ function createHello() {
     p.innerHTML = `
         Sou um Web Developer Full Stack.<br>
         Atualmente trabalhando como desenvolvedor Web na empresa 
-        <a style="text-decoration: none;" href="https://escritha.com/">Escritha</a>.<br>
+        <a style="text-decoration: none;">JM2 Desenvolvimento LTDA</a>.<br>
         Trabalho também em projetos particulares, como desenvolvimento de landing-pages até apliceções web 
         complexas.<br> 
     `
