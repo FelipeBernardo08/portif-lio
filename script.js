@@ -58,7 +58,7 @@ const linksFooter = [
         icon: "fa-github"
     },
     {
-        href: "https://wa.me/+5517991020668",
+        href: "https://wa.me/+5517991738456",
         icon: "fa-whatsapp"
     }
 ]
@@ -154,13 +154,12 @@ function createHello() {
     let p = document.createElement('p')
     p.innerHTML = `
         Sou um Web Developer Full Stack.<br>
-        Atualmente trabalhando como desenvolvedor Web na empresa 
-        <a style="text-decoration: none;">JM2 Desenvolvimento LTDA</a>.<br>
-        Trabalho também em projetos particulares, como desenvolvimento de landing-pages até apliceções web 
-        complexas.<br> 
+        Atualmente trabalhando como Desenvolvedor Web freelancer PJ.
+        <br> 
     `
     let a = document.createElement('a')
     a.classList.add('btn', 'btn-sm', 'btn-light')
+    a.href = "https://wa.me/+5517991738456"
     a.textContent = "CONTATO"
 
     hello.appendChild(h1)
