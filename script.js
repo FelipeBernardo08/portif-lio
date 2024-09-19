@@ -58,7 +58,7 @@ const linksFooter = [
         icon: "fa-github"
     },
     {
-        href: "https://wa.me/+5517991738456",
+        href: "https://wa.me/+5517991838456",
         icon: "fa-whatsapp"
     }
 ]
@@ -159,7 +159,7 @@ function createHello() {
     `
     let a = document.createElement('a')
     a.classList.add('btn', 'btn-sm', 'btn-light')
-    a.href = "https://wa.me/+5517991738456"
+    a.href = "https://wa.me/+5517991838456"
     a.textContent = "CONTATO"
 
     hello.appendChild(h1)
