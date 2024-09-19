@@ -105,14 +105,16 @@ function createAboutMe() {
         Com foco em desenvolvimento web, possuo conhecimentos sólidos como front e back-end.
         <br>
         Procuro aprender diariamente, para manter minhas aplicações atualizadas tecnicamente.<br>
-        Códigos limpos e simples de interpretar, repeitando boas práticas e garantindo qualidade.<br>
+        Códigos limpos e simples de interpretar, repeitando boas práticas e garantindo qualidade.<br><br>
         Stacks com as quais trabalho atualmente:<br>
         Linguagens (JavaScript, TypeScript e PHP)<br>
         Frameworks (Angular, Ionic, VueJs, NestJs, Laravel)<br>
         Bibliotecas (Bootstrap, Tailwind)<br>
         Banco de dados relacionais (MariaDB, Postgres) <br>
-        Tecnologias (Controle de versionamento GIT, Métodologia ágil SCRUM).<br>
-                            
+        Tecnologias (Controle de versionamento GIT, Métodologia ágil SCRUM).<br><br>
+        Experiências profissionais: <br>
+        - AGTech Agrotecnologia, Desenvolvedor Web (7 meses). <br>
+        - JM2 Tecnologia, Desenvolvedor Web (3 meses).        
     `;
 
     for (let i = 0; i < languages.length; i++) {
