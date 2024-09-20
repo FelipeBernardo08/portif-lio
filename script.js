@@ -155,8 +155,7 @@ function createHello() {
 
     let p = document.createElement('p')
     p.innerHTML = `
-        Olá meu nome é Felipe.<br>
-        Sou um Desenvolvedor Full Stack.<br>
+        Sou um Desenvolvedor Web Full Stack.<br>
         Atualmente trabalhando como freelancer PJ.
         <br> 
     `
