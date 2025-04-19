@@ -110,11 +110,13 @@ function createAboutMe() {
         Linguagens (JavaScript, TypeScript e PHP)<br>
         Frameworks (Angular, Ionic, VueJs, NestJs, Laravel)<br>
         Bibliotecas (Bootstrap, Tailwind)<br>
-        Banco de dados relacionais (MariaDB, Postgres) <br>
-        Tecnologias (Controle de versionamento GIT, Métodologia ágil SCRUM).<br><br>
+        Banco de dados relacionais (MySQL, MariaDB, Postgres) <br>
+        Tecnologias (Controle de versionamento GIT, Testes Unitários, Ubuntu Server, Microserviços).<br><br>
         Experiências profissionais: <br>
-        - AGTech Agrotecnologia, Desenvolvedor Web (7 meses). <br>
-        - JM2 Tecnologia, Desenvolvedor Web (3 meses).        
+        - AGTech Agrotecnologia, Desenvolvedor Web FullStack (7 meses). <br>
+        - JM2 Tecnologia, Desenvolvedor Web FullStack (3 meses). <br>
+        - SeteVoip, Desenvolvedor Web FullStack PJ (5 Meses). <br>
+        - Irroba E-commerce, Desenvolvedor Backend (Novembro 2024 - Atualmente).
     `;
 
     for (let i = 0; i < languages.length; i++) {
@@ -156,7 +158,7 @@ function createHello() {
     let p = document.createElement('p')
     p.innerHTML = `
         Sou um Desenvolvedor Web Full Stack.<br>
-        Atualmente trabalhando como freelancer PJ.
+        Atuando como Desenvolvedor Backend na empresa - <a class="link-job" href="">Irroba E-commerce</a>.
         <br> 
     `
     let a = document.createElement('a')
@@ -216,8 +218,10 @@ function createFooter() {
         col.appendChild(a)
     }
 
-    let p = document.createElement('p')
-    p.innerHTML = "© Todos os direitos reservados - 2022"
+    let p = document.createElement('p');
+    let date = new Date();
+    let year = date.getFullYear();
+    p.innerHTML = `© Todos os direitos reservados - ${year}`;
 
     col.appendChild(p)
     row.appendChild(col)

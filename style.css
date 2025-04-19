@@ -195,6 +195,15 @@ iframe {
     margin: 10px;
 }
 
+.link-job {
+    text-decoration: none;
+    color: white;
+}
+
+.link-job:hover {
+    text-decoration: underline;
+}
+
 .icon:hover {
     color: rgb(152, 59, 152);
     transition: all 0.5s;
