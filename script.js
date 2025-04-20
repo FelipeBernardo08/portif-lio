@@ -106,13 +106,13 @@ function createAboutMe() {
         <br>
         Procuro aprender diariamente, para manter minhas aplicações atualizadas tecnicamente.<br>
         Códigos limpos e simples de interpretar, repeitando boas práticas e garantindo qualidade.<br><br>
-        Stacks com as quais trabalho atualmente:<br>
+        <strong>Stacks com as quais trabalho atualmente:</strong><br>
         Linguagens (JavaScript, TypeScript e PHP)<br>
         Frameworks (Angular, Ionic, VueJs, NestJs, Laravel)<br>
         Bibliotecas (Bootstrap, Tailwind)<br>
         Banco de dados relacionais (MySQL, MariaDB, Postgres) <br>
         Tecnologias (Controle de versionamento GIT, Testes Unitários, Ubuntu Server, Microserviços).<br><br>
-        Experiências profissionais: <br>
+        <strong>Experiências profissionais:</strong> <br>
         - AGTech Agrotecnologia, Desenvolvedor Web FullStack (7 meses). <br>
         - JM2 Tecnologia, Desenvolvedor Web FullStack (3 meses). <br>
         - SeteVoip, Desenvolvedor Web FullStack PJ (5 Meses). <br>
