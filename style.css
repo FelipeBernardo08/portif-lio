@@ -210,10 +210,9 @@ iframe {
     font-size: 52px;
 }
 
-#certificado {
+.certificado {
     height: 450px;
 }
-
 
 [data-anime] {
     opacity: 0;
