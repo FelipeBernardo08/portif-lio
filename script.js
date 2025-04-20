@@ -171,9 +171,11 @@ function createHello() {
             </div>
 
             <div class="col-4">
-                <button class="btn btn-sm btn-outline-light w-75">
-                    LinkedIn
-                </button>
+                <a href="https://github.com/FelipeBernardo08">
+                    <button class="btn btn-sm btn-outline-light w-75">
+                        LinkedIn
+                    </button>
+                </a>
             </div>
 
         </div> 
